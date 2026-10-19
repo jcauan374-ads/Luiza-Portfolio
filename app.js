@@ -11,3 +11,26 @@ document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
 const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible'); }), { threshold: .12 });
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+const galleryModal = document.getElementById('gallery-modal');
+const galleryImage = document.getElementById('gallery-image');
+const galleryCaption = document.getElementById('gallery-caption');
+const closeGallery = () => { galleryModal.classList.remove('open'); galleryModal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+document.querySelectorAll('.gallery-item').forEach((item) => item.addEventListener('click', () => {
+  galleryImage.src = item.dataset.image;
+  galleryImage.alt = item.dataset.caption;
+  galleryCaption.textContent = item.dataset.caption;
+  galleryModal.classList.add('open');
+  galleryModal.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+}));
+document.querySelector('.gallery-close').addEventListener('click', closeGallery);
+galleryModal.addEventListener('click', (event) => { if (event.target === galleryModal) closeGallery(); });
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeGallery(); });
+
+const copyEmail = document.getElementById('copy-email');
+copyEmail.addEventListener('click', async () => {
+  await navigator.clipboard.writeText('luizakft.profissional@gmail.com');
+  copyEmail.innerHTML = 'e-mail copiado ✓';
+  setTimeout(() => { copyEmail.innerHTML = 'copiar e-mail <span>⧉</span>'; }, 2200);
+});
