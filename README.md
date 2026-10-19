@@ -13,12 +13,17 @@ Portfólio editorial de **Luiza Jerônimo da Silva**, estudante de Publicidade e
 - Experiência na PP&C e na Software.com.br;
 - Formação em Publicidade e Propaganda pela UNICID;
 - Habilidades de prospecção, funil, conteúdo, branding e social media;
+- Método de trabalho em quatro etapas: entender, organizar, construir e acompanhar;
+- Toolkit com prospecção, CRM, conteúdo, social media e marketing digital;
+- Certificação do Sebrae em Marketing Digital;
+- Galeria ampliável dos materiais visuais;
 - Projeto de branding e fidelização do **Cantinho do Café**;
 - Campanha de posicionamento **Vivant — Viva Agora**;
 - Currículo em PDF para download;
 - Contato por e-mail e WhatsApp;
 - Layout responsivo para celular, tablet e desktop;
-- Modal interativo com detalhes de cada case.
+- Modal interativo com detalhes de cada case;
+- Ação para copiar o e-mail profissional diretamente da página.
 
 ## 🎨 Direção criativa
 
